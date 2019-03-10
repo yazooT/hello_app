@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 躓いたところ
 
-Things you may want to cover:
+ファイルの変更が反映されない
+そもそもCloud9のIDEがオートセーブだと勘違いしていた。
 
-* Ruby version
+bundle installでエラーが起こる
+bundle updateで何故か動くようになった。
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+git pushでエラー
+Permission denied (publickey). fatal: Could not read from remote repository.
+git remoteがSSHとやらになっていた。
+これの設定がよくわからないため、git remoteをHTTPSに変更した。
